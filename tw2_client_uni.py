@@ -55,9 +55,11 @@ if __name__ == '__main__':
     log.startLogging(sys.stdout)
 
     log.msg('Input dedicated server ip address (xxx.xxx.xxx.xxx): ')
-    ip = '107.181.174.126' # input()
+    ip = input()
+    # ip = '107.181.174.126'
     log.msg('Input dedicated server connection port: ')
-    port = 9999 # int(input())
+    port = int(input())
+    # port = 9999
     log.msg('Enter client role: (S)ender or (R)eceiver: ')
     role = input()[0].upper()
     if role == 'S':
